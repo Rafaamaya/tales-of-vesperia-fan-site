@@ -1,0 +1,75 @@
+/* ============================================
+   VARIABLES Y RESET UNIVERSAL
+   ============================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================
+   ESTILOS BASE — MOBILE FIRST (desde 420px)
+   ============================================ */
+
+   html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #0d0d1a;
+    color: #e8e0d0;
+    min-width: 420px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #f0c040;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #c8860a;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #c8860a;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #f0c040;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #c8860a;
+    margin-bottom: 0.6rem;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 0.9rem;
+}
+
+a {
+    color: #f0c040;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffd966;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
