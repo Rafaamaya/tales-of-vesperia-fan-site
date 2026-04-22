@@ -195,6 +195,47 @@ section:nth-child(odd) {
     border: 2px solid #c8860a;
 }
 
+/* ============================================
+   SECCIÓN 2: CARACTERÍSTICAS PRINCIPALES
+   ============================================ */
+
+/*  .video-contenedor {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(200, 134, 10, 0.3);
+}
+
+.video-contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}  */
+
+.caracteristicas-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.caracteristica-card {
+    background-color: rgba(200, 134, 10, 0.07);
+    border: 1px solid rgba(200, 134, 10, 0.3);
+    border-radius: 4px;
+    padding: 1.2rem;
+}
+
+.caracteristica-card h3~p {
+    color: #d0c8b8;
+}
+
+
 /* ============================================ BREAKPOINT 1: TABLET — 768px ============================================ */
 
 @media (min-width: 768px) {
@@ -235,7 +276,7 @@ section:nth-child(odd) {
         width: 86%;
     }
 
-     #introduccion .seccion-contenido {
+    #introduccion .seccion-contenido {
         display: flex;
         gap: 2rem;
         align-items: flex-start;
@@ -250,6 +291,15 @@ section:nth-child(odd) {
         margin-top: 2.5rem;
         position: sticky;
         top: 1rem;
+    }
+
+    /* ============================================
+   SECCIÓN 2: CARACTERÍSTICAS PRINCIPALES
+   ============================================ */
+    .caracteristicas-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
     }
 
 }
