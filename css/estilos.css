@@ -13,7 +13,7 @@
    ============================================ */
 
 html {
-    font-size: 16px;
+    font-size: 1em;
     scroll-behavior: smooth;
 }
 
@@ -84,7 +84,7 @@ nav {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background-color: #4a4ae4;
+    background-color: #111128;
 }
 
 .nav-logo img {
@@ -163,6 +163,7 @@ section:nth-child(odd) {
 }
 
 
+
 /* ============================================
    BREAKPOINT 1: TABLET — 768px
    ============================================ */
@@ -170,7 +171,7 @@ section:nth-child(odd) {
 @media (min-width: 768px) {
 
     html {
-        font-size: 17px;
+        font-size: 1.0625em;
     }
 
     nav {
@@ -193,4 +194,44 @@ section:nth-child(odd) {
         padding: 0.4rem 0.6rem;
     }
 
+}
+
+/* ============================================
+   BREAKPOINT 2: DESKTOP — 1024px
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+    html {
+        font-size: 1.125em;
+    }
+
+    nav {
+        padding: 1rem 3rem;
+    }
+
+    .nav-logo img {
+        width: 160px;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .hero-subtitulo {
+        font-size: 1.3rem;
+    }
+
+    .seccion-contenido {
+        width: 85%;
+    }
 }
