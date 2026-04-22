@@ -235,6 +235,44 @@ section:nth-child(odd) {
     color: #d0c8b8;
 }
 
+/* ============================================
+   SECCIÓN 3: PERSONAJES
+   ============================================ */
+.personajes-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.personaje-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.personaje-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.personaje-card img {
+    width: 100%;
+    border-radius: 20px;
+    border: 8px solid rgba(200, 134, 10, 0.4);
+}
+
+.personaje-voz {
+    font-size: 0.82rem;
+    color: #a09080;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+}
+
+
+
 
 /* ============================================ BREAKPOINT 1: TABLET — 768px ============================================ */
 
@@ -302,6 +340,24 @@ section:nth-child(odd) {
         gap: 1.2rem;
     }
 
+    /* ============================================
+   SECCIÓN 3: PERSONAJES
+   ============================================ */
+
+    .personaje-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .personaje-card img {
+        width: 30%;
+        flex-shrink: 0;
+    }
+
+    .personaje-invertido {
+        flex-direction: row-reverse;
+    }
+
 }
 
 /* ============================================BREAKPOINT 2: DESKTOP — 1024px============================================ */
@@ -339,5 +395,14 @@ section:nth-child(odd) {
 
     .seccion-contenido {
         width: 85%;
+    }
+
+    /* ============================================
+   SECCIÓN 3: PERSONAJES
+   ============================================ */
+
+       .personaje-card img {
+        width: 50%;
+        object-fit: cover;
     }
 }
