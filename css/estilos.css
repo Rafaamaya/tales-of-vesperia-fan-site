@@ -8,9 +8,7 @@
     padding: 0;
 }
 
-/* ============================================
-   ESTILOS BASE — MOBILE FIRST (desde 420px)
-   ============================================ */
+/* ============================================ESTILOS BASE — MOBILE FIRST (desde 420px)============================================ */
 
 html {
     font-size: 1em;
@@ -162,11 +160,42 @@ section:nth-child(odd) {
     background-color: #0d0d1a;
 }
 
-
-
 /* ============================================
-   BREAKPOINT 1: TABLET — 768px
+   SECCIÓN 1: INTRODUCCIÓN
    ============================================ */
+
+.ficha-tecnica {
+    list-style: none;
+    margin-top: 1.2rem;
+    border-left: 3px solid #c8860a;
+    padding-left: 1rem;
+}
+
+.ficha-tecnica li {
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+/* Selector de hermano adyacente: li + li */
+.ficha-tecnica li+li {
+    border-top: 1px solid rgba(200, 134, 10, 0.2);
+}
+
+.ficha-etiqueta {
+    color: #c8860a;
+    font-weight: bold;
+}
+
+.intro-imagen {
+    margin-top: 1.5rem;
+}
+
+.intro-imagen img {
+    border-radius: 15px;
+    border: 2px solid #c8860a;
+}
+
+/* ============================================ BREAKPOINT 1: TABLET — 768px ============================================ */
 
 @media (min-width: 768px) {
 
@@ -194,11 +223,38 @@ section:nth-child(odd) {
         padding: 0.4rem 0.6rem;
     }
 
+    .hero {
+        min-height: 55vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .seccion-contenido {
+        width: 86%;
+    }
+
+     #introduccion .seccion-contenido {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .intro-texto {
+        width: 60%;
+    }
+
+    .intro-imagen {
+        width: 40%;
+        margin-top: 2.5rem;
+        position: sticky;
+        top: 1rem;
+    }
+
 }
 
-/* ============================================
-   BREAKPOINT 2: DESKTOP — 1024px
-   ============================================ */
+/* ============================================BREAKPOINT 2: DESKTOP — 1024px============================================ */
 
 @media (min-width: 1024px) {
 
