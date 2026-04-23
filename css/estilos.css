@@ -271,7 +271,31 @@ section:nth-child(odd) {
     margin-bottom: 0.3rem;
 }
 
+/* ============================================
+   SECCIÓN 4: GALERÍA
+   ============================================ */
 
+.galeria-descripcion {
+    color: #a09080;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.galeria-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.galeria-grid figure {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(200, 134, 10, 0.3);
+}
+
+.galeria-grid figure img:hover {
+    transform: scale(1.1);
+}
 
 
 /* ============================================ BREAKPOINT 1: TABLET — 768px ============================================ */
@@ -358,6 +382,16 @@ section:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
+    /* ============================================
+   SECCIÓN 4: GALERÍA
+   ============================================ */
+
+    .galeria-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
 }
 
 /* ============================================BREAKPOINT 2: DESKTOP — 1024px============================================ */
@@ -401,8 +435,17 @@ section:nth-child(odd) {
    SECCIÓN 3: PERSONAJES
    ============================================ */
 
-       .personaje-card img {
+    .personaje-card img {
         width: 50%;
         object-fit: cover;
     }
+
+    /* ============================================
+   SECCIÓN 4: GALERÍA
+   ============================================ */
+
+    .galeria-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
 }
