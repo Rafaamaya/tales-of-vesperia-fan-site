@@ -15,6 +15,14 @@ html {
     scroll-behavior: smooth;
 }
 
+header,
+footer,
+main {
+
+    max-width: 1200px;
+    margin: auto;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', serif;
     background-color: #0d0d1a;
@@ -64,7 +72,6 @@ a {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
 }
 
 /* ============================================
@@ -144,11 +151,9 @@ nav ul li a:hover {
 section {
     padding: 3rem 0;
 }
-
 .seccion-contenido {
-    width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Alternancia de fondo entre secciones — selector de elemento */
@@ -458,10 +463,6 @@ footer {
         font-size: 3rem;
     }
 
-    .seccion-contenido {
-        width: 86%;
-    }
-
     #introduccion .seccion-contenido {
         display: flex;
         gap: 2rem;
@@ -591,9 +592,6 @@ footer {
         font-size: 1.3rem;
     }
 
-    .seccion-contenido {
-        width: 85%;
-    }
 
     /* ============================================
    SECCIÓN 3: PERSONAJES
@@ -615,14 +613,13 @@ footer {
     /* ============================================
    FOOTER
    ============================================ */
+
     .footer-alumno {
         gap: 1.5rem;
     }
 
-    .footer-info {
-        width: 30%;
-        text-align: center;
-        margin: auto;
+    .alumno-foto img {
+        width: 120px;
+        height: 120px;
     }
-
 }
