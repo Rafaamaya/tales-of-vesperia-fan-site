@@ -60,7 +60,7 @@
                 <h2>Características principales</h2>
 
                 <div class="video-contenedor">
-                    <iframe  src="https://www.youtube.com/embed/k1Ckq16U6iI?si=DxMVrzCtacVTwJim" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/k1Ckq16U6iI?si=DxMVrzCtacVTwJim" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 
                 <div class="caracteristicas-grid">
@@ -217,28 +217,28 @@
         <section id="contacto">
             <div class="seccion-contenido">
                 <h2>Club de Fans</h2>
-                <p>¿Sos fan de Tales of Vesperia? Unite a nuestra comunidad y recibí novedades, contenido exclusivo y sorteos de merchandise oficial.</p>
+                <p class="formulario-descripcion">¿Sos fan de Tales of Vesperia? Unite a nuestra comunidad y recibí novedades, contenido exclusivo y sorteos de merchandise oficial.</p>
 
-                <form action="#" method="post">
+                <form class="formulario" action="#" method="post">
 
-                    <div>
+                    <div class="campo-grupo">
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" name="nombre" placeholder="Ej: Yuri Lowell" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Yuri Lowell" required>
                     </div>
 
-                    <div>
+                    <div class="campo-grupo">
                         <label for="email">Correo electrónico</label>
-                        <input type="email" name="email" placeholder="tu@email.com" required>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
                     </div>
 
-                    <div>
+                    <div class="campo-grupo">
                         <label for="telefono">Teléfono</label>
-                        <input type="tel" name="telefono" placeholder="+54 11 0000-0000">
+                        <input type="tel" id="telefono" name="telefono" placeholder="+54 11 0000-0000">
                     </div>
 
-                    <div>
+                    <div class="campo-grupo">
                         <label for="personaje">Personaje favorito</label>
-                        <select name="personaje">
+                        <select id="personaje" name="personaje">
                             <option value="">— Elegí un personaje —</option>
                             <option value="yuri">Yuri Lowell</option>
                             <option value="estelle">Estellise</option>
@@ -252,13 +252,13 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="campo-grupo campo-ancho">
                         <label for="comentario">¿Por qué te gustan los Tales of?</label>
-                        <textarea name="comentario" rows="5" placeholder="Contanos tu historia con la saga..."></textarea>
+                        <textarea id="comentario" name="comentario" rows="5" placeholder="Contanos tu historia con la saga..."></textarea>
                     </div>
 
-                    <div>
-                        <button type="submit">¡Quiero unirme!</button>
+                    <div class="campo-grupo campo-ancho">
+                        <button class="btn-enviar" type="submit">¡Quiero unirme!</button>
                     </div>
 
                 </form>

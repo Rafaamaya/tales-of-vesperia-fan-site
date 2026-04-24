@@ -297,6 +297,70 @@ section:nth-child(odd) {
     transform: scale(1.1);
 }
 
+re/* ============================================
+   SECCIÓN 5: FORMULARIO DE CONTACTO
+   ============================================ */
+
+.formulario-descripcion {
+    color: #a09080;
+    margin-bottom: 1.8rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo-grupo label {
+    font-size: 0.9rem;
+    color: #c8860a;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.campo-grupo input,
+.campo-grupo select,
+.campo-grupo textarea {
+    background-color: #1a1a30;
+    border: 1px solid rgba(200, 134, 10, 0.5);
+    border-radius: 10px;
+    padding: 0.65rem 0.8rem;
+    color: #e8e0d0;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 100%;
+}
+
+.campo-grupo textarea {
+    resize: vertical;
+    min-height: 10rem;
+}
+
+.btn-enviar {
+    background-color: #c8860a;
+    color: #0d0d1a;
+    border: none;
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #f0c040;
+}
 
 /* ============================================ BREAKPOINT 1: TABLET — 768px ============================================ */
 
@@ -392,6 +456,19 @@ section:nth-child(odd) {
         gap: 1rem;
     }
 
+    /* ============================================
+   SECCIÓN 5: FORMULARIO DE CONTACTO
+   ============================================ */
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.1rem;
+    }
+
+    .campo-ancho {
+        grid-column: span 2;
+    }
 }
 
 /* ============================================BREAKPOINT 2: DESKTOP — 1024px============================================ */
@@ -447,5 +524,5 @@ section:nth-child(odd) {
     .galeria-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
 }
