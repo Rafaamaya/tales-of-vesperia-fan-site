@@ -610,6 +610,30 @@ footer {
 
 
     /* ============================================
+   SECCIÓN 1: INTRODUCCIÓN
+   ============================================ */
+
+    .intro-imagen img {
+        border-width: 6px;
+        border-color: #f0c040;
+        border-radius: 25px;
+        padding: 8px;
+        background-color: #1a1a30;
+    }
+
+    /* ============================================
+   SECCIÓN 2: CARACTERÍSTICAS PRINCIPALES
+   ============================================ */
+
+    .caracteristica-card {
+        background-color: rgba(200, 134, 10, 0.18);
+        border: none;
+        border-left: 5px solid #f0c040;
+        border-radius: 0 18px 18px 0;
+        padding: 1.8rem;
+    }
+
+    /* ============================================
    SECCIÓN 3: PERSONAJES
    ============================================ */
 
@@ -624,6 +648,17 @@ footer {
 
     .galeria-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* ============================================
+   SECCIÓN 5: FORMULARIO DE CONTACTO
+   ============================================ */
+
+    .btn-enviar {
+        border-radius: 50px;
+        padding: 1.1rem 3rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.1em;
     }
 
     /* ============================================
