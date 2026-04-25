@@ -25,7 +25,7 @@ main {
 
 body {
     font-family: Georgia, 'Times New Roman', serif;
-    background-color: #0d0d1a;
+    background-color: #0a1a2a;
     color: #e8e0d0;
     min-width: 420px;
     overflow-x: hidden;
@@ -79,7 +79,7 @@ img {
    ============================================ */
 
 header {
-    background-color: #0a0a14;
+    background-color: #06121e;
     border-bottom: 3px solid #c8860a;
 }
 
@@ -89,7 +89,7 @@ nav {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background-color: #111128;
+    background-color: #142838;
 }
 
 .nav-logo img {
@@ -159,11 +159,11 @@ section {
 
 /* Alternancia de fondo entre secciones — selector de elemento */
 section:nth-child(even) {
-    background-color: #111128;
+    background-color: #142838;
 }
 
 section:nth-child(odd) {
-    background-color: #0d0d1a;
+    background-color: #0a1a2a;
 }
 
 /* ============================================
@@ -314,6 +314,16 @@ margin-bottom: 1.5rem ;
    SECCIÓN 5: FORMULARIO DE CONTACTO
    ============================================ */
 
+.contacto-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contacto-logo img {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
 .formulario-descripcion {
     color: #a09080;
     margin-bottom: 1.8rem;
@@ -341,7 +351,7 @@ margin-bottom: 1.5rem ;
 .campo-grupo input,
 .campo-grupo select,
 .campo-grupo textarea {
-    background-color: #1a1a30;
+    background-color: #1f3245;
     border: 1px solid rgba(200, 134, 10, 0.5);
     border-radius: 10px;
     padding: 0.65rem 0.8rem;
@@ -366,7 +376,7 @@ margin-bottom: 1.5rem ;
 
 .btn-enviar {
     background-color: #c8860a;
-    color: #0d0d1a;
+    color: #0a1a2a;
     border: none;
     padding: 0.85rem 2rem;
     font-size: 1rem;
@@ -388,7 +398,7 @@ margin-bottom: 1.5rem ;
    ============================================ */
 
 footer {
-    background-color: #060610;
+    background-color: #04101a;
     border-top: 3px solid #c8860a;
     padding: 2.5rem 1rem;
 }
@@ -618,7 +628,7 @@ footer {
         border-color: #f0c040;
         border-radius: 25px;
         padding: 8px;
-        background-color: #1a1a30;
+        background-color: #1f3245;
     }
 
     /* ============================================
