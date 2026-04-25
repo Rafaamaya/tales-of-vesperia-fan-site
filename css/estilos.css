@@ -294,6 +294,7 @@ margin-bottom: 1.5rem ;
 .galeria-grid figure img {
     width: 100%;
     height: auto;
+    transition: transform 0.4s ease;
 }
 
 .galeria-grid figure img:hover {
@@ -353,6 +354,14 @@ margin-bottom: 1.5rem ;
 .campo-grupo textarea {
     resize: vertical;
     min-height: 10rem;
+}
+
+.campo-grupo input:focus,
+.campo-grupo select:focus,
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: #f0c040;
+    box-shadow: 0 0 0 2px rgba(240, 192, 64, 0.2);
 }
 
 .btn-enviar {
